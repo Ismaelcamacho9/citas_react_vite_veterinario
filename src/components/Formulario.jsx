@@ -31,8 +31,6 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
 
     // Validación del Formulario
     if ([nombre, propietario, email, fecha, sintomas].includes("")) {
-      console.log("Hay Al Menos un campo vacio");
-
       setError(true);
       return;
     }
