@@ -30,7 +30,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
     e.preventDefault();
 
     // Validación del Formulario
-    if ([nombre, propietario, email, fecha, sintomas].includes("")) {
+    if (nombre.trim() === "" || propietario.trim() === "" || email.trim() === "" || fecha === "" || sintomas.trim() === "") {
       setError(true);
       return;
     }
